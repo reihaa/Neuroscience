@@ -21,5 +21,20 @@ I simulated LIF, ELIF and adaptive-ELIF nueron models with different kinds of in
 2. calculated Gabor filter matrixes for four orientations and 8 sizes. Then projected them on a arbitrary photo.
 
 # phase6:
+implementing a computational model based on spiking neural networks for object recognition.
 
- 
+Used BindsNet library. Used on four object groups of CalTech dataset.
+
+The HMAX computational model is implemented using bindsnet.
+The model layers consist of:
+1. input:
+Four different image sizes for each size in four different directions Gabor filter with a fixed size, a total of 16 layers.
+2. S1:
+Similarly, there are 16 layers between each layer and its corresponding layer with input convolution.
+3. C1:
+Another 16 layers, each half the size of the previous layers, and there was a MaxPoolConnection between these layers and the s1 layers.
+4. S2:
+There is a layer multiplied by the number of features of the images that are connected to the previous layer by connection, and the features are extracted from the weight of the synapses between these layers.
+5. C2:
+There is a layer with a size equal to the number of layers in the previous part, which takes the maximum from all the neurons of its corresponding layer.
+6. And at the end two layers have been added for decision making.
