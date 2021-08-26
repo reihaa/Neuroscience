@@ -1,4 +1,3 @@
-![unnamed](https://user-images.githubusercontent.com/47301294/131029509-4f3ac22f-cba0-4c8c-997e-968f8cd7875b.png)
 # Neuroscience
 
 # phase1:
@@ -15,6 +14,12 @@ I simulated LIF, ELIF and adaptive-ELIF nueron models with different kinds of in
 
 2. A network of 100 neurons, including 80 excitatory neurons and 20 inhibitory neurons is created, including a population of 30 for the input layer and seven populations of 10 for the output layers. The synapses between these neurons are randomly formed, and the weight of the neurons is created randomly for each output layer. A pattern can be selected as the input pattern. In this case, when the neurons in the pattern layer spike after each pattern, amount of dopamine increases, and if the neurons in the other layers spike after the corresponding pattern, the amount of dopamine decreases. Dopamine is a global variable that has the same value throughout the code. The value of synaptic tag and weight for each synapse is calculated as shown in the first part. The number of general neurons, input and output layer neurons, and the possibility of existence a synapse between an input and output layer neurons can be varied. The activity of each layer is calculated and displayed every ten seconds as the average voltage of the neurons in that layer at that time. The graph below indecates the average activity of different populations throughout time.
 
-
 ![unnamed](https://user-images.githubusercontent.com/47301294/131029550-0d409b88-e588-4390-97ae-ab88fd32153d.png)
+
+# phase5:
+1. calculated DoG filter matrixes using Gaussian functions for five different sizes. Then projected them on a arbitrary photo using 2D convolution.
+2. calculated Gabor filter matrixes for four orientations and 8 sizes. Then projected them on a arbitrary photo.
+
+# phase6:
+
  
