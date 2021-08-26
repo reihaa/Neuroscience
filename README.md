@@ -22,7 +22,7 @@ simulating population of spiking neurons and measuring it's activities for deffe
 2. calculated Gabor filter matrixes for four orientations and 8 sizes. Then projected them on a arbitrary photo.
 
 # phase6:
-implementing a computational model based on spiking neural networks for object recognition.
+Implementing a computational model based on spiking neural networks for object recognition.
 
 Used BindsNet library. Used on four object groups of CalTech dataset.
 
