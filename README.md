@@ -4,6 +4,7 @@
 I simulated LIF, ELIF and adaptive-ELIF nueron models with different kinds of input including arbitrary, fixed and random input, then drew cell's activity during time using different values of parameters. These graphs are included in a report file.
 
 # phase2:
+simulating population of spiking neurons and measuring it's activities for defferent kinds of input. ( I didn't do this phase seperately but I did it in the next phases)  
 # phase3:
 1. I Implemented STDP rule, then measured synaptic weight differences of each pre_synaptic and post_synaptic neurons, included these values in a graph for comparison included in report file, first page.
 
@@ -28,13 +29,13 @@ Used BindsNet library. Used on four object groups of CalTech dataset.
 The HMAX computational model is implemented using bindsnet.
 The model layers consist of:
 1. input:
-Four different image sizes for each size in four different directions Gabor filter with a fixed size, a total of 16 layers.
+Four different photo sizes. For each size, a gabor filter with a fixed size is applied in four different directions. A total of 16 layers.
 2. S1:
-Similarly, there are 16 layers between each layer and its corresponding layer with input convolution.
+Similarly, there are 16 layers that between each layer and its corresponding input layer there is a convolution.
 3. C1:
-Another 16 layers, each half the size of the previous layers, and there was a MaxPoolConnection between these layers and the s1 layers.
+Another 16 layers, each half the size of the previous layers, and there is a MaxPoolConnection between these layers and the s1 layers.
 4. S2:
 There is a layer multiplied by the number of features of the images that are connected to the previous layer by connection, and the features are extracted from the weight of the synapses between these layers.
 5. C2:
-There is a layer with a size equal to the number of layers in the previous part, which takes the maximum from all the neurons of its corresponding layer.
+There are layers in the number of features multiplied by the size of the photos, which are connected to the previous layer by connection. Features are extracted from the weight of synapses between these layers.
 6. And at the end two layers have been added for decision making.
