@@ -12,7 +12,8 @@ I simulated LIF, ELIF and adaptive-ELIF nueron models with different kinds of in
 # phase4:
 1. simulation of the incentive learning law. Then used neural network of the last phase, gave each output neuron a different layer and control their synaptic weights using rewards and punishments (using dopamin concentration). A graph indicating initial weights and final weights of these two neurons is included.
 
-2. 
+2. A network of 100 neurons, including 80 excitatory neurons and 20 inhibitory neurons is created, including a population of 30 for the input layer and seven populations of 10 for the output layers. The synapses between these neurons are randomly formed, and the weight of the neurons is created randomly for each output layer. A pattern can be selected as the input pattern. In this case, when the neurons in the pattern layer spike after each pattern, amount of dopamine increases, and if the neurons in the other layers spike after the corresponding pattern, the amount of dopamine decreases. Dopamine is a global variable that has the same value throughout the code. The value of synaptic tag and weight for each synapse is calculated as shown in the first part. The number of general neurons, input and output layer neurons, and the possibility of existence a synapse between an input and output layer neurons can be varied. The activity of each layer is calculated and displayed every ten seconds as the average voltage of the neurons in that layer at that time. The graph below indecates the average activity of different populations throughout time.
+
 
 
  
