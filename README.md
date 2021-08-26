@@ -1,5 +1,5 @@
 # Neuroscience
-
+Neuroscience course, University of Tehran  (Feb - Aug 2020)
 # phase1:
 I simulated LIF, ELIF and adaptive-ELIF nueron models with different kinds of input including arbitrary, fixed and random input, then drew cell's activity during time using different values of parameters. These graphs are included in a report file.
 
